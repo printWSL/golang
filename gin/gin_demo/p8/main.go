@@ -29,8 +29,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/index", index)
 	http.HandleFunc("/home", home)
-	http.HandleFunc("/index2", index2)
-	http.HandleFunc("/home2", home2)
+	// http.HandleFunc("/index2", index2)
+	// http.HandleFunc("/home2", home2)
 	err := http.ListenAndServe(":9090", nil)
 	if err != nil {
 		fmt.Printf("HTTP server start faield, err %v", err)
